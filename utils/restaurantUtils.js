@@ -26,7 +26,13 @@ function selectRandomCuisine() {
  * @returns {*} An object representing the restaurant's menu, including the cuisine type and items.
  */
 function generateMenu() {
-  // Implementation here...
+  const cuisine = selectRandomCuisine();
+  const calculateItemCount = Math.floor(Math.random() * 6) +5;
+  const menu = [];
+  for (i = 0; i < calculateItemCount; i++) {
+    menu.push(generateRandomMenuItem(cuisine));
+  }
+  return { cuisine, items: menu };
 }
 
 /**
