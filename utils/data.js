@@ -2,7 +2,7 @@ const Restaurants = [
     {
         name: 'The Gourmet Bistro',
         id: 'the-gourmet-bistro',
-        city: 'Montreal,QC',
+        city: 'Montreal, QC',
     },
     {
         name: 'Spicy Kitchen',
@@ -17,26 +17,26 @@ const Restaurants = [
     {
         name: 'Comfort Diner',
         id: 'comfort-diner',
-        city: 'St-Jerome ,QC',
+        city: 'St-Jerome, QC',
     },
     {
         name: 'Sweet Tooth Bakery',
         id: 'sweet-tooth-bakery',
-        city: 'Trois-Riveres ,QC',
+        city: 'Trois-Riveres, QC',
     },
 ];
 
 const Cuisines = [
-    'italian',
-    'indian',
-    'chinese',
-    'vegan',
-    'mexican',
+    'Italian',
+    'Indian',
+    'Chinese',
+    'Vegan',
+    'Mexican',
 ];
 
 //Dishes generated courtesy of ChatGPT, I have absolutely no idea if these are real dishes, or if the descriptions are correct.
 const Dishes = {
-    'italian': [
+    'Italian': [
       { name: 'Spaghetti Carbonara', description: 'Classic Roman pasta with eggs, cheese, pancetta, and pepper.' },
       { name: 'Margherita Pizza', description: 'Simple pizza topped with tomato, mozzarella, and fresh basil.' },
       { name: 'Lasagna', description: 'Layers of pasta with meat sauce, béchamel, and cheese.' },
@@ -58,7 +58,7 @@ const Dishes = {
       { name: 'Cioppino', description: 'Seafood stew made with fish, shellfish, and tomato broth.' },
       { name: 'Cacciucco', description: 'Tuscan fish stew with various seafood and bread.' },
     ],
-    'chinese': [
+    'Chinese': [
       { name: 'Sweet and Sour Pork', description: 'Pork cooked in a tangy sweet and sour sauce.' },
       { name: 'Kung Pao Chicken', description: 'Spicy stir-fried chicken with peanuts and vegetables.' },
       { name: 'Spring Rolls', description: 'Crispy rolls filled with vegetables and sometimes meat.' },
@@ -79,7 +79,7 @@ const Dishes = {
       { name: 'Chili Garlic Shrimp', description: 'Shrimp cooked with garlic and chili sauce.' },
       { name: 'Buddha Bowl', description: 'Healthy bowl with grains, vegetables, and proteins.' },
     ],
-    'vegan': [
+    'Vegan': [
       { name: 'Chickpea Salad', description: 'Fresh salad with chickpeas, tomatoes, and cucumber.' },
       { name: 'Vegan Tacos', description: 'Tacos filled with seasoned lentils and avocado.' },
       { name: 'Quinoa Bowl', description: 'Healthy bowl with quinoa, veggies, and tahini dressing.' },
@@ -100,7 +100,7 @@ const Dishes = {
       { name: 'Tofu Stir-fry', description: 'Stir-fried tofu with vegetables and soy sauce.' },
       { name: 'Ratatouille', description: 'Stewed vegetable dish with zucchini, eggplant, and tomato.' },
     ],
-    'mexican': [
+    'Mexican': [
       { name: 'Tacos al Pastor', description: 'Tacos filled with marinated pork and pineapple.' },
       { name: 'Guacamole', description: 'Creamy avocado dip served with tortilla chips.' },
       { name: 'Chiles en Nogada', description: 'Stuffed peppers topped with walnut sauce.' },
@@ -120,7 +120,7 @@ const Dishes = {
       { name: 'Flan', description: 'Creamy caramel custard dessert.' },
       { name: 'Agua Fresca', description: 'Refreshing fruit drink made with water and sugar.' },
     ],
-    'indian': [
+    'Indian': [
         { name: 'Pani Puri', description: 'Crispy puris filled with spiced water, tamarind chutney, and potatoes.' },
         { name: 'Masala Dosa', description: 'Thin rice crepe filled with spiced potato filling, served with chutney and sambar.' },
         { name: 'Idli', description: 'Steamed rice cakes often served with sambar and coconut chutney.' },
