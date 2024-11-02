@@ -2,22 +2,27 @@ const Restaurants = [
     {
         name: 'The Gourmet Bistro',
         id: 'the-gourmet-bistro',
+        city: 'Montreal,QC',
     },
     {
         name: 'Spicy Kitchen',
         id: 'spicy-kitchen',
+        city: 'Laval, QC',
     },
     {
         name: 'Healthy Eats',
         id: 'healthy-eats',
+        city: 'Brossard, QC',
     },
     {
         name: 'Comfort Diner',
         id: 'comfort-diner',
+        city: 'St-Jerome ,QC',
     },
     {
         name: 'Sweet Tooth Bakery',
         id: 'sweet-tooth-bakery',
+        city: 'Trois-Riveres ,QC',
     },
 ];
 
