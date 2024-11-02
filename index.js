@@ -15,8 +15,8 @@ app.use(express.static('public'));
  * Renders the homepage that lists cities and restaurant names.
  */
 app.get('/', (request, response) => {
-    response.render('index', { restaurants: Restaurants });
   });
+});
   
   /**
    * GET /restaurant/:name
