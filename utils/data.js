@@ -3,26 +3,36 @@ const Restaurants = [
         name: 'The Gourmet Bistro',
         id: 'the-gourmet-bistro',
         city: 'Montreal, QC',
+        phone: '(514)-689-3201',
+        email: 'GourmetBistro@gmail.com',
     },
     {
         name: 'Spicy Kitchen',
         id: 'spicy-kitchen',
         city: 'Laval, QC',
+        phone: '(514)-743-0667',
+        email: 'SpicyKitchen@gmail.com',
     },
     {
         name: 'Healthy Eats',
         id: 'healthy-eats',
         city: 'Brossard, QC',
+        phone: '(514)-989-2485',
+        email: 'EatsHealthy@gmail.com',
     },
     {
         name: 'Comfort Diner',
         id: 'comfort-diner',
         city: 'St-Jerome, QC',
+        phone: '(514)-565-2843',
+        email: 'ComfortDiner@gmail.com',
     },
     {
         name: 'Sweet Tooth Bakery',
         id: 'sweet-tooth-bakery',
         city: 'Trois-Riveres, QC',
+        phone: '(514)-234-4830',
+        email: 'SweetToothBakery@gmail.com',
     },
 ];
 
