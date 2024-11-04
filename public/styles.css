@@ -1,37 +1,394 @@
-/* Base styling, feel free to remove or alter */
+/* CSS WORK FOR MAIN HOME PAGE */
 
-body {
-    background: linear-gradient(90deg, rgba(93,142,251,1) 0%, rgba(93,142,251,1) 50%, rgba(0,212,255,1) 100%);
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    color: #F6F6F6;
+.main-page {
+    background-image: url('./images/Sprint-2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main-content {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    align-items: center;
-    flex-direction: column;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-radius: 50pt;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50pt;
+    height: 350pt;
+    
 }
 
-.main-content h1 {
-    font-size: 50px;
+.header-title {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 30pt;
+    color: #5D4037;
+    text-align: center;
 }
 
-.main-content form {
-    font-size: 15px;
+.header-subtitle {
+    font-family: 'Pacifico', cursive;
+    font-size: 20pt;
+    color: #5D4037;
+    text-align: center;
 }
 
-.main-content form button {
-    border: none;
-    background: #F6F6F6;
-    mix-blend-mode: screen;
-    padding: 5px;
+.restaurant-form {
+    text-align: left;
+    margin-left: 10pt;
+    margin-right: 10pt;
+}
+
+.restaurant-label {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 10pt;
+    color: #5D4037;
+}
+
+.restaurant-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
     border-radius: 5px;
-    margin-left: 5px;
-    cursor: pointer;
+    border: 3px solid black;
 }
+
+.submit-button {
+    margin-top: 24pt;
+    padding: 1rem 1.5rem;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    color: #8f6150;
+    float: left;
+    margin-left: 5pt;
+    border-radius: 15px;
+}
+
+.submit-button:hover {
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.footer {
+    margin-top: 2em;
+}
+
+.main-page a {
+    
+    padding: 1rem 1.5rem;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    color: #8f6150;
+    float: right;
+    border-radius: 15px;
+}
+
+.main-page a:hover {
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS WORK FOR MENU PAGE */
+
+.menu-background {
+    background-color: #333333;
+}
+
+.menu-page {
+    align-self: center;
+    max-width: 680px;
+    padding: 20px;
+    background-color: rgba(192, 192, 192, 0.9);
+    border-radius: 50pt;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 10px solid #8f6150;;
+}
+
+.menu-title {
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 30pt;
+    color: #5D4037;
+    text-align: center;
+}
+
+.cuisine-type {
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 17pt;
+    color: #5D4037;
+    text-align: center;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    padding: 10px;
+    font-size: 18pt;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 12pt;
+    color: #5D4037;
+    text-align: left;
+}
+
+.item-description {
+    color: #795548;
+    font-style: italic;
+    margin-left: 0.5rem;
+}
+
+.item-price {
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #5D4037;
+}
+
+.special-label {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.navigation-links {
+    margin-top: 2em;
+}
+
+.alerts-link {
+    color: #8f6150;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #333333;
+    padding: 0.5rem 1rem;
+    border-radius: 20pt;
+    transition: background-color 0.3s;
+    margin-right: 5pt;
+}
+
+.alerts-link:hover {
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* CSS WORK FOR SPECIALS PAGE */
+
+
+.alerts-page {
+    background-image: url('./images/Sprint-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.specials-page {
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 10px solid #8f6150;;
+}
+
+
+.specials-title {
+    font-size: 2.5em;
+    color: #5D4037;
+    margin-bottom: 0.5em;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.restaurant-name {
+    font-size: 1.5em;
+    color: #3E2723;
+    font-weight: bold;
+    margin-top: 16pt;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+.menu-item {
+    padding: 10px;
+    border-bottom: 1px solid #D3D3D3;
+    font-size: 12pt;
+    text-align: left;
+    color: #6D4C41;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item-name {
+    font-weight: bold;
+    color: #3E2723;
+}
+
+.item-description {
+    color: #795548;
+    font-style: italic;
+    margin-left: 0.5rem;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #6D4C41;
+    margin-left: 0.5rem;
+}
+
+
+.no-specials {
+    color: #8D6E63;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.navigation-links {
+    margin-top: 2em;
+}
+
+.back-link {
+    color: #8f6150;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #333333;
+    padding: 0.5rem 1rem;
+    border-radius: 20pt;
+    transition: background-color 0.3s;
+    margin-right: 5pt;
+}
+
+.back-link:hover {
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* CSS FOR CONTACT PAGE */
+
+.contact-background {
+    background-image: url('./images/Sprint-3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-page {
+    max-width: 700px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.contact-title {
+    color: #8D6E63;
+    font-family: 'Pacifico', cursive;
+    font-size: 30pt;
+    color: #5D4037;
+    text-align: center;
+}
+
+.restaurant-contact {
+    padding: 15px;
+    border-bottom: 1px solid #D3D3D3;
+    margin-bottom: 15px;
+}
+
+.restaurant-name {
+    font-size: 1.5em;
+    color: #3E2723;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+.restaurant-phone, .restaurant-email {
+    font-size: 1.1em;
+    color: #6D4C41;
+    font-family: 'Pacifico', cursive;
+
+}
+
+
+.navigation-links {
+    margin-top: 2em;
+}
+
+.back-link {
+    color: #8f6150;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #333333;
+    padding: 0.5rem 1rem;
+    border-radius: 20pt;
+    transition: background-color 0.3s;
+    margin-right: 5pt;
+}
+
+.back-link:hover {
+   background-color: rgb(207, 207, 207);
+    color: black;
+}
+
