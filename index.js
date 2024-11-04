@@ -4,16 +4,13 @@ const path = require('path');
 const { generateRandomMenuItem, generateMenu, selectRandomCuisine } = require("./utils/restaurantUtils");
 
 const app = express();
-let restaurantData = {}; //This should be populated soon
+let restaurantData = {};
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
 
-/**
- * GET /
- * Renders the homepage that lists cities and restaurant names.
- */
+// Renders The Main Home Page
 
 app.get('/', (request, response) => {
   const randomRestaurant =
@@ -25,13 +22,9 @@ app.get('/', (request, response) => {
     randomMenu,
   });
 });
-  
-  /**
-   * GET /restaurant/:name
-   * Displays a specific restaurant's random menu.
-   * The cuisine is randomly selected and a menu is generated based on it.
-   */
 
+  // Renders The Restaurant Page
+  
   app.get('/restaurant', (request, response) => {
     const restaurantId = request.query.restaurantId;
     const restaurant = Restaurants.find((r) => r.id === restaurantId);
@@ -45,7 +38,8 @@ app.get('/', (request, response) => {
 
   });
 
-  //Add any other required routes here
+
+  // Renders The Restuarants Specials
 
   app.get('/alerts', (request, response) => {
     const specials = Restaurants.map((restaurant) => {
@@ -63,7 +57,6 @@ app.get('/', (request, response) => {
 
 
   // Renders The Contact Page
-  
   app.get('/contact', (request, response) => {
     response.render('contact', { Restaurants });
 });
