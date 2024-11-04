@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="menu-background">
+
+    <main class="menu-page">
+        <header class="menu-header">
+            <h1 class="menu-title">Menu for <%= restaurant.name %></h1>
+            <p class="cuisine-type">Cuisine: <%= menuData.cuisine %></p>
+        </header>
+
+        <section class="menu-section">
+            <ul class="menu-items">
+                <% menuData.items.forEach(item => { %>
+                    <li class="menu-item">
+                        <span class="item-name"><%= item.name %></span> -
+                        <span class="item-description"><%= item.description %></span>
+                        <span class="item-price">($<%= item.price %>)</span>
+                        <% if (item.dailySpecial) { %>
+                            <strong class="special-label">(Special)</strong>
+                        <% } %>
+                    </li>
+                <% }) %>
+            </ul>
+        </section>
+
+        <footer class="navigation-links">
+            <a href="/" class="alerts-link">Back to Homepage</a>
+            <a href="/alerts" class="alerts-link">View Special Menu Alerts</a>
+        </footer>
+    </main>
+
+</body>
+</html>
+
