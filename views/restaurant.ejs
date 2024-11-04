@@ -9,13 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="menu-background">
-
     <main class="menu-page">
         <header class="menu-header">
             <h1 class="menu-title">Menu for <%= restaurant.name %></h1>
             <p class="cuisine-type">Cuisine: <%= menuData.cuisine %></p>
         </header>
-
         <section class="menu-section">
             <ul class="menu-items">
                 <% menuData.items.forEach(item => { %>
@@ -30,13 +28,11 @@
                 <% }) %>
             </ul>
         </section>
-
         <footer class="navigation-links">
             <a href="/" class="alerts-link">Back to Homepage</a>
             <a href="/alerts" class="alerts-link">View Special Menu Alerts</a>
         </footer>
     </main>
-
 </body>
 </html>
 
