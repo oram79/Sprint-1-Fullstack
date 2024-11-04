@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="contact-background">
+
+    <main class="contact-page">
+        <header class="contact-header">
+            <h1 class="contact-title">Contact Our Restaurants</h1>
+        </header>
+
+        <section class="contact-section">
+            <% Restaurants.forEach(restaurant => { %>
+                <div class="restaurant-contact">
+                    <h2 class="restaurant-name"><%= restaurant.name %></h2>
+                    <p class="restaurant-phone">Phone: <%= restaurant.phone %></p>
+                    <p class="restaurant-email">Email: <%= restaurant.email %></p>
+                </div>
+            <% }) %>
+        </section>
+
+        <footer class="navigation-links">
+            <a href="/" class="back-link">Back to Homepage</a>
+        </footer>
+    </main>
+
+</body>
+</html>
