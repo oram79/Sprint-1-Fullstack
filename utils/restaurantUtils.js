@@ -5,6 +5,7 @@ const { Dishes, Cuisines, Restaurants } = require("./data");
  * @param {string} cuisine - The desired cuisine for the menu item.
  * @returns {*} A random menu item with a name, description, price, and special status.
  */
+
 function generateRandomMenuItem(cuisine) {
   const dishes = Dishes[cuisine];
   const selectDish = dishes[Math.floor(Math.random() * dishes.length)];
@@ -17,6 +18,7 @@ function generateRandomMenuItem(cuisine) {
  * Selects a random cuisine type for a restaurant.
  * @returns {*} A random cuisine type.
  */
+
 function selectRandomCuisine() {
   return Cuisines[Math.floor(Math.random() * Cuisines.length)];
 }
@@ -25,6 +27,7 @@ function selectRandomCuisine() {
  * Generates a menu for a restaurant, including a random cuisine type and a list of menu items.
  * @returns {*} An object representing the restaurant's menu, including the cuisine type and items.
  */
+
 function generateMenu() {
   const cuisine = selectRandomCuisine();
   const calculateItemCount = Math.floor(Math.random() * 6) +5;
@@ -34,9 +37,5 @@ function generateMenu() {
   }
   return { cuisine, items: menu };
 }
-
-/**
- * Additional utility functions can be defined here if needed.
- */
 
 module.exports = { generateRandomMenuItem, selectRandomCuisine, generateMenu };
