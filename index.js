@@ -14,6 +14,7 @@ app.use(express.static('public'));
  * GET /
  * Renders the homepage that lists cities and restaurant names.
  */
+
 app.get('/', (request, response) => {
   const randomRestaurant =
     Restaurants[Math.floor(Math.random() * Restaurants.length)];
@@ -30,6 +31,7 @@ app.get('/', (request, response) => {
    * Displays a specific restaurant's random menu.
    * The cuisine is randomly selected and a menu is generated based on it.
    */
+
   app.get('/restaurant', (request, response) => {
     const restaurantId = request.query.restaurantId;
     const restaurant = Restaurants.find((r) => r.id === restaurantId);
@@ -59,7 +61,9 @@ app.get('/', (request, response) => {
     response.render('alerts', { specials });
   });
 
+
   // Renders The Contact Page
+  
   app.get('/contact', (request, response) => {
     response.render('contact', { Restaurants });
 });
