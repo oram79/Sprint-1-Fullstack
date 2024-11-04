@@ -32,11 +32,39 @@ app.get('/', (request, response) => {
    */
   app.get('/restaurant', (request, response) => {
     const restaurantId = request.query.restaurantId;
+    const restaurant = Restaurants.find((r) => r.id === restaurantId);
+    if (restaurant) {
+      const menuData = generateMenu();
+      response.render('restaurant', { restaurant, menuData });
+    } else {
+      response.status(404).send('Restaurant not found...');
+    }
     console.log(`restaurantId: ${restaurantId}`);
-    //Get the restaurants menu, and then display the page
+
   });
 
   //Add any other required routes here
+
+  app.get('/alerts', (request, response) => {
+    const specials = Restaurants.map((restaurant) => {
+      const menuData = generateMenu();
+      const specialItems = menuData.items.filter((item) => item.dailySpecial);
+      return {
+        restaurantName: restaurant.name,
+        cuisine: menuData.cuisine,
+        specialItems,
+      };
+    });
+    console.log(specials);
+    response.render('alerts', { specials });
+  });
+
+  // Renders The Contact Page
+  app.get('/contact', (request, response) => {
+    response.render('contact', { Restaurants });
+});
+  
+
 
 const port = 3000;
 app.listen(port, () => {
