@@ -1,22 +1,45 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Restaurants</title>
-        <link rel="stylesheet" type="text/css" href="./styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    </head>
-    <body>
-        <main class="main-content">
-            <h1>Restaurant Menus</h1>
-            <h2>Please choose your restaurant to get the menu</h2>
-            <form action="/restaurant" method="GET">
-                <label for="restaurantId">Select a restaurant:</label>
-                <select name="restaurantId" id="restaurantId">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menus</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body class="main-page">
+    <main class="main-content">
+        <header class="header">
+            <h1 class="header-title">Welcome to Our Restaurant Selection</h1>
+            <h2 class="header-subtitle">Select a Restaurant to View Its Menu</h2>
+        </header>
+        <section class="restaurant-selection">
+            <form action="/restaurant" method="GET" class="restaurant-form">
+                <label for="restaurantId" class="restaurant-label">Choose a Restaurant:</label>
+                <select name="restaurantId" id="restaurantId" class="restaurant-dropdown">
                     <% restaurants.forEach((restaurant) => { %>
-                        <option value="<%= restaurant.id %>"><%= restaurant.name %></option>
+                        <option value="<%= restaurant.id %>">
+                            <%= restaurant.name %> - <%= restaurant.city %>
+                        </option>
                     <% }) %>
                 </select>
-                <button type="submit">Get the menu!</button>
+                <button type="submit" class="submit-button">View Menu</button>
             </form>
-        </main>
-    </body>
+        </section>
+        <footer class="footer">
+    <div class="button-group">
+        <a href="/alerts" class="alerts-link">View Today's Special Menu Items</a>
+        <a href="/contact" class="alerts-link">Contact Us!</a>
+        
+    </div>
+</footer>
+
+    </main>
+</body>
 </html>
+
