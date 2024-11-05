@@ -39,11 +39,12 @@ app.get('/', (request, response) => {
   });
 
 
-  // Renders The Restuarants Specials
+  // Renders The Restaurants Specials
 
   app.get('/alerts', (request, response) => {
     const specials = Restaurants.map((restaurant) => {
       const menuData = generateMenu();
+      menuData.items[0].dailySpecial = true;
       const specialItems = menuData.items.filter((item) => item.dailySpecial);
       return {
         restaurantName: restaurant.name,
