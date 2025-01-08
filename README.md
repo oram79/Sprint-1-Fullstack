@@ -1,7 +1,3 @@
-# Restaurant Menu Generator - Template Repository
-
-This repository is a template for a restaurant menu generation project. Use this project as a starting point to build an Express-based web application that generates random restaurant menus based on different cuisines.
-
 ## How to Use This Template
 
 1. **Create Your Own Repository**:
